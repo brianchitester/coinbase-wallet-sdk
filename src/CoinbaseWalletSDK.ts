@@ -137,6 +137,8 @@ export class CoinbaseWalletSDK {
       jsonRpcUrl,
       chainId,
       qrUrl: this.getQrUrl(),
+      // we do pass event listener to the provider here, but never in wallet-mobile
+      // do we need to keep this then?
       eventListener: this._eventListener,
       overrideIsMetaMask: this._overrideIsMetaMask,
       overrideIsCoinbaseWallet: this._overrideIsCoinbaseWallet,
